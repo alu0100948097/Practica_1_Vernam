@@ -6,9 +6,9 @@ class Vernam
 	end
 	
 	def binario
-        m_binario=@mensaje.unpack('B*').join
-        puts "Mensaje en binario: #{m_binario}"
-        puts "Longitud del mensaje: #{m_binario.bytesize}"
+        m_binario=@mensaje.unpack('B*')
+        puts "Mensaje en binario: #{m_binario.join}"
+        puts "Longitud del mensaje: #{m_binario.join.bytesize}"
 	end
 	
 end
