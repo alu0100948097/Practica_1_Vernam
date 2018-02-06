@@ -1,3 +1,5 @@
+require 'colorize'
+
 class Vernam
 	
 	attr_writer :mensaje, :clave
@@ -44,10 +46,17 @@ loop do
 			print "Introduza la clave aleatoria: "
 			clave=gets.chomp
 			puts
+			while clave.bytesize!=@test.m_binario.join.bytesize
+				puts "La longitud de la clave es distinta a la del mensaje en binario".red
+				puts
+				print "Introduza la clave aleatoria: "
+				clave=gets.chomp
+				puts
+			end
 			@test.clave=clave
 			@test.cifrado
 			puts "Mensaje cifrado en binario: #{@test.m_c_binario.join}"
-		    puts "Mensaje cifrado: #{[@test.m_c_binario.join.to_s].pack('B*')}"
+			puts "Mensaje cifrado: #{[@test.m_c_binario.join.to_s].pack('B*')}"
 			puts
 		when '2'
 			system "clear"
@@ -63,6 +72,13 @@ loop do
 			print "Introduza la clave aleatoria: "
 			clave=gets.chomp
 			puts
+			while clave.bytesize!=@test.m_binario.join.bytesize
+				puts "La longitud de la clave es distinta a la del mensaje en binario".red
+				puts
+				print "Introduza la clave aleatoria: "
+				clave=gets.chomp
+				puts
+			end
 			@test.clave=clave
 			@test.cifrado
 			puts "Mensaje original en binario: #{@test.m_c_binario.join}"
