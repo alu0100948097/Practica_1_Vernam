@@ -1,1 +1,2 @@
-# Practica_1_Vernam
+# Práctica de Laboratorio #1. Vernam.
+## Alumno: Sergio Ferrera de Diego
