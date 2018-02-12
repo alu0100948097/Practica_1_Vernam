@@ -87,5 +87,9 @@ loop do
 		when '3'
 			system "clear"
 			break
+        else
+            system "clear"
+            puts "La opción introducida es incorrecta".red
+            puts
 	end
 end
