@@ -52,6 +52,14 @@ loop do
 			puts
 			print "Introduza la clave aleatoria: "
 			clave=gets.chomp
+            while clave.empty?
+				system "clear"
+                puts "No se ha introducido clave".red
+				puts
+				print "Introduza la clave aleatoria: "
+				clave=gets.chomp
+				puts
+			end
 			puts
 			while clave.bytesize!=@test.m_binario.join.bytesize
 				puts "La longitud de la clave es distinta a la del mensaje en binario".red
@@ -85,6 +93,14 @@ loop do
 			puts
 			print "Introduza la clave aleatoria: "
 			clave=gets.chomp
+            while clave.empty?
+				system "clear"
+                puts "No se ha introducido clave".red
+				puts
+				print "Introduza la clave aleatoria: "
+				clave=gets.chomp
+				puts
+			end
 			puts
 			while clave.bytesize!=@test.m_binario.join.bytesize
 				puts "La longitud de la clave es distinta a la del mensaje en binario".red
