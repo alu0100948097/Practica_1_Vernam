@@ -37,6 +37,13 @@ loop do
 			puts
 			print "Introduzca el mensaje original: "
 			mensaje=gets.chomp
+            while mensaje.empty?
+				system "clear"
+                puts "No se ha introducido mensaje".red
+				puts
+				print "Introduza el mensaje: "
+				mensaje=gets.chomp
+			end
 			puts
 			@test.mensaje=mensaje
 			@test.binario
@@ -63,6 +70,13 @@ loop do
 			puts
 			print "Introduzca el mensaje cifrado: "
 			mensaje=gets.chomp
+            while mensaje.empty?
+				system "clear"
+                puts "No se ha introducido mensaje".red
+				puts
+				print "Introduza el mensaje: "
+				mensaje=gets.chomp
+			end
 			puts
 			@test.mensaje=mensaje
 			@test.binario
