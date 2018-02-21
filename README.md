@@ -4,3 +4,4 @@
 ```
 sudo gem install colorize
 ```
+### Al final del código esta comentado la parte sin modificación, si se quiere introducir la clave y no las generadas de forma aleatoria.
